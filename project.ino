@@ -24,6 +24,13 @@ char daysOfTheWeek[7][12] = {
 void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   //rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // Setting Time/Date
+  display.clearDisplay();
+  display.setTextColor(WHITE);
+  display.setTextSize(2);
+  display.setCursor(15, 10);
+  display.print("aiden.at");
+  display.display();
+  delay(2000);
 }
 
 void loop() {
