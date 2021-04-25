@@ -10,7 +10,7 @@
 
 RTC_DS3231 rtc;
 
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306 display;
 char daysOfTheWeek[7][12] = {
   "Sonntag",
   "Montag",
