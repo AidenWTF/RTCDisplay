@@ -23,8 +23,6 @@ char daysOfTheWeek[7][12] = {
 
 void setup() {
   //rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // Setting Time/Date
-  Serial.begin(9600);
-  delay(3000);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 }
 
