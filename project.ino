@@ -22,8 +22,8 @@ char daysOfTheWeek[7][12] = {
 };
 
 void setup() {
-  //rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // Setting Time/Date
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  //rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // Setting Time/Date
 }
 
 void loop() {
